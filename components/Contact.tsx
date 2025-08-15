@@ -92,7 +92,7 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, creative projects,
+            I&apos;m always open to discussing new opportunities, creative projects,
             or potential collaborations.
           </p>
         </div>
@@ -101,11 +101,11 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 Whether you have a project in mind, want to collaborate, or just
-                want to say hi, I'd love to hear from you. Drop me a message and
-                I'll get back to you as soon as possible.
+                want to say hi, I&apos;d love to hear from you. Drop me a message and
+                I&apos;ll get back to you as soon as possible.
               </p>
             </div>
 

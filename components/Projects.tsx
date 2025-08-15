@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
+import Image from "next/image"
 
 const ProjectsSection = () => {
   const projects = [
@@ -113,10 +114,18 @@ const ProjectsSection = () => {
             >
               <div className={`${project.featured ? "lg:flex" : ""}`}>
                 <div className={`${project.featured ? "lg:w-1/2" : ""}`}>
-                  <img
+                  {/* <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-64 object-cover"
+                  /> */}
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 object-cover"
+                    width={700}        
+                    height={256}       
+                    priority={project.featured} 
                   />
                 </div>
                 <div

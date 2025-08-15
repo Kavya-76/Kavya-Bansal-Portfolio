@@ -1,5 +1,5 @@
 
-import { Code, Monitor, Database, Server, Wrench, Palette, Brain } from 'lucide-react';
+import { Code, Monitor, Database, Server, Wrench, Brain } from 'lucide-react';
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -48,7 +48,7 @@ const SkillsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Expertise</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm passionate about working with cutting-edge technologies and constantly expanding my skill set.
+            I&apos;m passionate about working with cutting-edge technologies and constantly expanding my skill set.
           </p>
         </div>
         
