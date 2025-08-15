@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   const [isDark, setIsDark] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     if (isDark) {
