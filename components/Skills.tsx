@@ -1,42 +1,42 @@
 
-import { Code, Database, Globe, Smartphone, Palette, Zap } from 'lucide-react';
+import { Code, Monitor, Database, Server, Wrench, Palette, Brain } from 'lucide-react';
 
 const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
-      icon: <Globe className="h-8 w-8" />,
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js", "HTML5/CSS3"],
+      icon: <Monitor className="h-8 w-8" />,
+      skills: ["React.js", "Next.js", "Redux", "Tailwind CSS", "Bootstrap", "HTML5/CSS3"],
       color: "from-blue-500 to-cyan-500"
     },
     {
       title: "Backend Development",
-      icon: <Database className="h-8 w-8" />,
-      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Express.js", "GraphQL"],
+      icon: <Server className="h-8 w-8" />,
+      skills: ["Node.js", "Express.js", "FastAPI", "Authentication (auth.js, jwt)"],
       color: "from-green-500 to-emerald-500"
     },
     {
-      title: "Mobile Development",
-      icon: <Smartphone className="h-8 w-8" />,
-      skills: ["React Native", "Flutter", "iOS", "Android", "Expo", "PWA"],
+      title: "Database",
+      icon: <Database className="h-8 w-8" />,
+      skills: ["PostgreSQL", "MongoDB", "Mongoose", "Prisma", "Firebase"],
       color: "from-purple-500 to-pink-500"
     },
     {
-      title: "UI/UX Design",
-      icon: <Palette className="h-8 w-8" />,
-      skills: ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator", "Prototyping"],
+      title: "Machine Learning",
+      icon: <Brain className="h-8 w-8" />,
+      skills: ["Numpy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn", "MLflow"],
       color: "from-orange-500 to-red-500"
     },
     {
       title: "DevOps & Tools",
-      icon: <Zap className="h-8 w-8" />,
-      skills: ["AWS", "Docker", "Git", "CI/CD", "Linux", "Kubernetes"],
+      icon: <Wrench className="h-8 w-8" />,
+      skills: ["AWS", "Docker", "Git", "CI/CD", "Github Actions", "Kubernetes"],
       color: "from-indigo-500 to-blue-500"
     },
     {
       title: "Programming Languages",
       icon: <Code className="h-8 w-8" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "Go"],
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++"],
       color: "from-teal-500 to-green-500"
     }
   ];

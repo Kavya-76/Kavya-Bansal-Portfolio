@@ -24,7 +24,7 @@ const HeroSection = () => {
             Kavya Bansal
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
-            Full Stack Developer & UI/UX Designer
+            Developer Crafting Web & Data-Driven Solutions
           </p>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             I create beautiful, functional, and user-centered digital experiences.
@@ -35,9 +35,18 @@ const HeroSection = () => {
             <Button size="lg" className="px-8 py-3 text-lg" onClick={scrollToProjects}>
               View My Work
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-3 text-lg">
-              Download CV
-            </Button>
+
+            {/* Download Resume Button */}
+            <a
+              href="/Kavya_Bansal_Resume.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="lg" className="px-8 py-3 text-lg">
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           <Button 

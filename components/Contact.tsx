@@ -1,8 +1,9 @@
 import { useState } from "react";
+import axios from "axios";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, TwitterIcon } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -13,22 +14,28 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData);
 
-    toast.success("Message sent!", {
-      description: "Thank you for your message. I'll get back to you soon!",
-    });
+    try {
+      const res = await axios.post("/api/contact", formData);
 
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+      if (res.status === 200) {
+        toast.success("Message sent!", {
+          description: "Thank you for your message. I'll get back to you soon!",
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        toast.error("Failed to send message.", {
+          description: "Please try again later.",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Something went wrong.", {
+        description: "Please try again later.",
+      });
+    }
   };
 
   const handleChange = (
@@ -51,13 +58,12 @@ const ContactSection = () => {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
       value: "+91 7017378529",
-      href: "tel:+15551234567",
+      href: "tel:+917017378529",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
-      value: "San Francisco, CA",
-      href: "#",
+      value: "India",
     },
   ];
 
@@ -73,8 +79,8 @@ const ContactSection = () => {
       label: "LinkedIn",
     },
     {
-      icon: <Twitter className="h-5 w-5" />,
-      href: "#",
+      icon: <TwitterIcon className="h-5 w-5" />,
+      href: "https://x.com/KavyaBa49581969",
       label: "Twitter",
     },
   ];
@@ -143,10 +149,7 @@ const ContactSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium mb-2"
-                  >
+                  <label htmlFor="name" className="block text-sm font-medium mb-2">
                     Name
                   </label>
                   <Input
@@ -160,10 +163,7 @@ const ContactSection = () => {
                   />
                 </div>
                 <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium mb-2"
-                  >
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">
                     Email
                   </label>
                   <Input
@@ -179,10 +179,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="subject" className="block text-sm font-medium mb-2">
                   Subject
                 </label>
                 <Input
@@ -197,10 +194,7 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
+                <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message
                 </label>
                 <Textarea

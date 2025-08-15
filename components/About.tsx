@@ -18,33 +18,27 @@ const AboutSection = () => {
           <div className="space-y-6 text-center">
             <h3 className="text-2xl font-semibold">Hello! I'm Kavya Bansal</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience creating 
-              digital solutions that make a difference. My journey in web development started 
-              with curiosity and has evolved into a career dedicated to crafting exceptional 
-              user experiences.
+              
+
+
+              I'm an aspiring full-stack web developer fueled by a passion for creating user-centered digital solutions and a curiosity for solving real-world problems through code. My development journey started with hands-on projects—both personal and academic—where I gained experience in modern web technologies such as React, Node.js, MongoDB, and Next.js.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I specialize in modern web technologies including React, Node.js, and cloud 
-              platforms. When I'm not coding, you'll find me exploring new technologies, 
-              contributing to open-source projects, or sharing knowledge with the developer community.
+              In addition to web development, I am actively learning the foundations of machine learning and data science. This growing interest has helped me build a basic understanding of data-driven problem solving, including projects that explore data analysis, predictive modeling, and the use of libraries like Pandas and Scikit-learn.
             </p>
-            
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I'm now seeking opportunities to apply my skills, collaborate with experienced teams, and grow
+              into a professional developer while continuing to learn and explore new technologies.
+            </p>
+
             <div className="grid grid-cols-2 gap-6 mt-8 max-w-2xl mx-auto">
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Location</h4>
-                <p className="text-muted-foreground">San Francisco, CA</p>
-              </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-2">Experience</h4>
-                <p className="text-muted-foreground">5+ Years</p>
-              </div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Email</h4>
                 <p className="text-muted-foreground">kavyabansal2000@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Phone</h4>
-                <p className="text-muted-foreground">+ 91 7017378529</p>
+                <p className="text-muted-foreground">+91 7017378529</p>
               </div>
             </div>
           </div>

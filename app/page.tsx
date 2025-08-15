@@ -9,8 +9,8 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   useEffect(() => {
     if (isDark) {
@@ -130,7 +130,7 @@ export default function Home() {
       <footer className="bg-muted py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Portfolio. Built with React & Tailwind CSS.
+            © Kavya Bansal.
           </p>
         </div>
       </footer>
