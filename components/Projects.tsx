@@ -18,7 +18,7 @@ const ProjectsSection = () => {
         "OpenAI API",
         "Tailwind CSS",
       ],
-      liveUrl: "https://spend-smart-lime.vercel.app/",
+      liveUrl: "https://spend-smart-money.vercel.app/",
       githubUrl: "https://github.com/Kavya-76/SpendSmart",
       featured: true,
     },
